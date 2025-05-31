@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "elementum"
-version = "0.0.3"
+version = "0.0.5"
 authors = [
     {name="Person1234"}
 ]
@@ -22,4 +22,4 @@ Homepage = "https://github.com/Person12345678910111213141516/element"
 Issues = "https://github.com/Person12345678910111213141516/element"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/element"]
+packages = ["src/elementum"]
