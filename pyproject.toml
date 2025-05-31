@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "element"
-version = "0.0.1"
+name = "elementum"
+version = "0.0.3"
 authors = [
     {name="Stuart Mangione", email="Stuart.Mangione@gmail.com"}
 ]
@@ -13,7 +13,6 @@ readme = "README.md"
 requires-python = ">=3.0"
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Operating System :: OS independent",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering :: Chemistry"
 ]
@@ -21,3 +20,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Person12345678910111213141516/element"
 Issues = "https://github.com/Person12345678910111213141516/element"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/element"]

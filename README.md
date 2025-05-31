@@ -1,13 +1,13 @@
 # Element
-## Propaganda
+## General Information
 Element is a Python library that allows users to easily get information on the elements. It also allows you to make compounds from those elements.
 
 ## Documentation
 To create an instance of an element, type:
 
 ```py
-import element
-element = element.Element("Hydrogen")
+import elementum
+element = elementum.Element("Hydrogen")
 ```
 
 Note that `element = element.Element("H")`, `element = element.Element(1)`, or `element = element.Element(1.008)` will also work.
