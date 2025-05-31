@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "elementum"
 version = "0.0.3"
 authors = [
-    {name="Stuart Mangione", email="Stuart.Mangione@gmail.com"}
+    {name="Person1234"}
 ]
 description = "A python module for getting information on the elements."
 readme = "README.md"
