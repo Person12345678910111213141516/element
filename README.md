@@ -1,4 +1,4 @@
-# Element
+# Elementum
 ## General Information
 Element is a Python library that allows users to easily get information on the elements. It also allows you to make compounds from those elements.
 
@@ -10,13 +10,13 @@ import elementum
 element = elementum.Element("Hydrogen")
 ```
 
-Note that `element = element.Element("H")`, `element = element.Element(1)`, or `element = element.Element(1.008)` will also work.
+Note that `element = elementum.Element("H")`, `element = elementum.Element(1)`, or `element = elementum.Element(1.008)` will also work.
 
 Once an element is created, you can view its properties with the `identity` function, used like this:
 
 ```py
 import element
-h = element.Element("Hydrogen")
+h = elementum.Element("Hydrogen")
 print(h.identity())
 ```
 
@@ -32,7 +32,7 @@ To view common compounds containing the element, there is another function calle
 
 ```py
 import element
-h = element.Element("Hydrogen")
+h = elementum.Element("Hydrogen")
 print(h.compounds())
 ```
 
@@ -40,7 +40,7 @@ Last but not least, one can view the full periodic table with the `table` functi
 
 ```py
 import element
-table = element.table()
+table = elementum.table()
 ```
 
 ## Compounds
@@ -48,8 +48,8 @@ You can add elements together and multiply them to make compounds, like so:
 
 ```py
 import element
-H = element.Element("Hydrogen")
-O = element.Element("Oxygen")
+H = elementum.Element("Hydrogen")
+O = elementum.Element("Oxygen")
 water = H*2+O
 print(water)
 ```
