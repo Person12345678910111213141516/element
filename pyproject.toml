@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "element"
+version = "0.0.1"
+authors = [
+    {name="Stuart Mangione", email="Stuart.Mangione@gmail.com"}
+]
+description = "A python module for getting information on the elements."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Chemistry"
+]
+
+[project.urls]
+Homepage = "https://github.com/Person12345678910111213141516/element"
+Issues = "https://github.com/Person12345678910111213141516/element"
