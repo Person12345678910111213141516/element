@@ -12,7 +12,7 @@ element = elementum.Element("Hydrogen")
 
 Note that `element = elementum.Element("H")`, `element = elementum.Element(1)`, or `element = elementum.Element(1.008)` will also work.
 
-Once an element is created, you can view its properties with the `identity` function, used like this:
+Once an element is created, you can view its properties by printing it, like this:
 
 ```py
 import element
