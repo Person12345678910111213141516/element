@@ -839,32 +839,12 @@ class Element:
                 self.number = data['atomic_number']
                 self.mass = data['atomic_mass']
                 self.type = data['type']
-                self.is_radioactive = data['radioactive']
+                self.radioactive = data['radioactive']
                 return
         raise ValueError("Invalid identifier for an element.")
 
-    def identity(self):
-        return {
-            "Name": self.name,
-            "Symbol": self.symbol,
-            "Atomic Number": self.number,
-            "Atomic Mass": self.mass,
-            "Element Type": self.type,
-            "Radioactive": self.is_radioactive
-        }
-
-    def compounds(self):
-        common_compounds = {
-            "Hydrogen": ["Water (H2O)", "Hydrochloric Acid (HCl)", "Hydrogen Peroxide (H2O2)"],
-            "Helium": ["Helium-3", "Helium-4"],
-            "Lithium": ["Lithium Carbonate (Li2CO3)", "Lithium Bromide (LiBr)"],
-            "Beryllium": ["Beryllium Oxide (BeO)", "Beryllium Sulfate (BeSO4)"],
-            "Boron": ["Boric Acid (H3BO3)", "Boron Trifluoride (BF3)"],
-            "Carbon": ["Carbon Dioxide (CO2)", "Methane (CH4)"],
-            "Nitrogen": ["Ammonia (NH3)", "Nitric Acid (HNO3)"],
-            "Oxygen": ["Water (H2O)", "Ozone (O3)"],
-        }
-        return common_compounds.get(self.name, [])
+    def __str__(self):
+        return f"{self.name} ({self.symbol}): Atomic Number: {self.number}, Atomic Mass: {self.mass}, Type: {self.type}, Radioactive: {self.radioactive}"
 
     def __add__(self, other):
         if isinstance(other, Element):

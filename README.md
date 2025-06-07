@@ -17,7 +17,7 @@ Once an element is created, you can view its properties with the `identity` func
 ```py
 import element
 h = elementum.Element("Hydrogen")
-print(h.identity())
+print(h)
 ```
 
 The identity property shows the element's:
