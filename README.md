@@ -28,13 +28,6 @@ This shows the element's:
 - Type (Alkali metals, Noble gasses, etc.)
 - Radioactivity (either True or False)
 
-Last but not least, one can view the full periodic table with the `table` function.
-
-```py
-import element
-table = elementum.table()
-```
-
 ## Compounds
 You can add elements together and multiply them to make compounds, like so:
 
@@ -44,4 +37,11 @@ H = elementum.Element("Hydrogen")
 O = elementum.Element("Oxygen")
 water = H*2+O
 print(water)
+```
+
+Last but not least, one can view the full periodic table with the `table` function.
+
+```py
+import element
+table = elementum.table()
 ```
